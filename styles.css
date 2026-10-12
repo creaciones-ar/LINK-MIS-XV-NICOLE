@@ -830,3 +830,29 @@ main#main-content { overflow-x: clip; }
 }
 .location-content-box { padding-right: 0; }
 .location-photo-wrapper { flex: 0 0 48%; }
+
+/* ---------- 25. UBICACIÓN: foto grande pegada al costado, texto centrado ----------
+   La foto ocupa más de la mitad del ancho, pegada al borde izquierdo, con su alto
+   natural (sin recortes). El texto queda centrado en el espacio que sobra. */
+.location-section {
+    align-items: center;
+    gap: 12px;
+    padding-left: 0;
+    padding-right: 12px;
+}
+.location-photo-wrapper {
+    position: static;
+    flex: 0 0 56%;
+    min-height: 0;
+    justify-content: flex-start;
+}
+.torn-edge-photo {
+    position: static;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    max-width: none;
+    object-fit: initial;
+    clip-path: none;
+}
+.location-content-box { padding: 0; justify-content: center; }
