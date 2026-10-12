@@ -45,7 +45,6 @@ body {
     overflow-x: hidden;
 }
 
-to { opacity: 1; } }
 
 img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; }
@@ -303,12 +302,12 @@ section {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    gap: clamp(13px, 5vw, 35px);
+    gap: clamp(14px, 5vw, 36px);
     width: 100%;
     max-width: 560px;
 }
 .side-label {
-    font-size: clamp(.75rem, 3.1vw, 1.1rem);
+    font-size: clamp(.85rem, 3.2vw, 1.1rem);
     letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: 500;
@@ -379,7 +378,6 @@ section {
 .torn-edge-photo {
     width: 100%;
     max-width: 320px;
-    clip-path: polygon(0 0, 95% 0, 99% 7%, 94% 15%, 98% 24%, 93% 33%, 98% 43%, 94% 53%, 99% 63%, 93% 73%, 98% 83%, 94% 92%, 97% 100%, 0 100%);
 }
 
 .location-content-box { flex: 1 1 0; display: flex; flex-direction: column; align-items: center; text-align: center; }
@@ -785,3 +783,20 @@ main#main-content { overflow-x: clip; }
 .hero-side .polaroid-stack .polaroid-card { width: clamp(130px, 42vw, 215px); }
 .hero-side .polaroid-stack .polaroid-card:nth-child(1) { margin-left: 10px; }
 .hero-side .polaroid-stack .polaroid-card:nth-child(2) { margin-top: -34px; margin-left: 0; margin-right: 10px; }
+
+/* ---------- 20. FECHA: "21:00 HS" en un solo renglón ---------- */
+.date-row { gap: clamp(8px, 3vw, 36px); }
+.side-label {
+    font-size: clamp(.68rem, 2.9vw, 1.1rem);
+    letter-spacing: clamp(1px, .5vw, 3px);
+    white-space: nowrap;
+}
+.date-frame { padding-left: clamp(14px, 5vw, 40px); padding-right: clamp(14px, 5vw, 40px); }
+
+/* ---------- 21. FOTO DEL SALÓN: sin borde rasgado agregado por código ----------
+   La foto ya trae su propio marco roto, se muestra completa y sin recortes. */
+.torn-edge-photo {
+    clip-path: none;
+    object-fit: contain;
+    object-position: left center;
+}
