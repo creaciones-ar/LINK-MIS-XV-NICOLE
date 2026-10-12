@@ -819,3 +819,14 @@ main#main-content { overflow-x: clip; }
 .location-content-box { justify-content: center; }
 .location-content-box .icon-container { margin-bottom: 14px; }
 .location-name { margin-bottom: 24px; }
+
+/* ---------- 24. UBICACIÓN: misma separación a ambos lados ----------
+   La foto deja el mismo espacio a la izquierda que el texto a la derecha.
+   Para cambiarlo, tocá --loc-pad (más grande = más margen). */
+.location-section {
+    --loc-pad: clamp(14px, 4.5vw, 24px);
+    padding-left: var(--loc-pad);
+    padding-right: var(--loc-pad);
+}
+.location-content-box { padding-right: 0; }
+.location-photo-wrapper { flex: 0 0 48%; }
