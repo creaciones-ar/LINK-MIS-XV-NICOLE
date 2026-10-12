@@ -88,10 +88,11 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--plateado); outl
 }
 
 .welcome-sub {
-    font-size: 1.05rem;
+    font-family: var(--serif);
+    font-size: 1.35rem;
     letter-spacing: 3px;
-    text-transform: lowercase;
-    font-weight: 500;
+    text-transform: uppercase;
+    font-weight: 700;
     margin: 18px 0 34px;
     text-shadow: 0 2px 8px rgba(0,0,0,.6);
 }
@@ -799,4 +800,14 @@ main#main-content { overflow-x: clip; }
     clip-path: none;
     object-fit: contain;
     object-position: left center;
+}
+
+/* ---------- 22. "MIS QUINCE AÑOS" con la letra de la referencia ----------
+   Serif clásica en mayúsculas y bien espaciada (Cinzel). */
+.welcome-sub {
+    font-family: "Cinzel", "Times New Roman", serif;
+    font-size: clamp(1.05rem, 4.8vw, 1.4rem);
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
 }
