@@ -110,7 +110,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--plateado); outl
 .env-flap  { fill: #d3deef; stroke: #a9bbd6; stroke-width: 1.5; }
 .env-line  { fill: none; stroke: #a9bbd6; stroke-width: 1.5; }
 .env-line.faint { stroke: rgba(255,255,255,.7); stroke-width: 1.2; }
-.env-seal  { fill: var(--azul-oscuro); }
+.env-seal  { fill: #122543; }
 .env-seal-inner { fill: none; stroke: rgba(255,255,255,.25); stroke-width: 1.5; }
 .env-seal, .env-seal-inner { animation: latido 2.2s ease-in-out infinite; transform-origin: 160px 124px; }
 
@@ -710,7 +710,7 @@ main#main-content { overflow-x: clip; }
 .fit-line { width: max-content; max-width: none; margin-left: auto; margin-right: auto; white-space: nowrap; }
 .welcome-name { line-height: 1; }
 
-.envelope .seal { animation: latido 2.2s ease-in-out infinite; transform-origin: 160px 130px; }
+.envelope .seal { animation: latido 2.2s ease-in-out infinite; transform-origin: 160px 114px; }
 
 .polaroid-card img { aspect-ratio: 3 / 4; object-position: center 30%; }
 .polaroid-row {
