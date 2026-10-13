@@ -873,3 +873,8 @@ main#main-content { overflow-x: clip; }
 .polaroid-card {
     box-shadow: 0 10px 24px rgba(6, 25, 68, .3);
 }
+
+/* ---------- 27. MARCO TIPO POLAROID: borde de abajo grueso ---------- */
+.polaroid-card {
+    padding: 10px 10px 48px;
+}
