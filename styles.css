@@ -1,7 +1,7 @@
 /* =========================================
    INVITACIÓN XV DE NICOLE
    Estructura y tipografía de la referencia,
-   paleta azul / plateado (sin negro ni bolas disco)
+   paleta azul marino #061944
    ========================================= */
 
 
@@ -14,13 +14,10 @@
     --plateado-oscuro: #7f8ea6;
     --blanco: #ffffff;
 
-    /* Color de todos los textos. Si tu fondo1.jpg es OSCURO,
-       poné --texto: #ffffff y --texto-suave: #dfe6f1 */
     --texto: #1b365d;
     --texto-suave: #4a5568;
     --linea: rgba(27, 54, 93, 0.55);
 
-    /* Tipografías (las de la referencia) */
     --script: "Herr Von Muellerhoff", cursive;
     --sans: "Montserrat", sans-serif;
     --serif: "Cormorant Garamond", serif;
@@ -154,7 +151,6 @@ section {
     align-items: center;
 }
 
-/* Títulos en cursiva fina, como la referencia */
 .script-title {
     font-family: var(--script);
     font-weight: 400;
@@ -245,7 +241,6 @@ section {
 .is-playing .icon-play { display: none; }
 .is-playing .icon-pause { display: block; }
 
-/* Versículo (izquierda) + polaroids apiladas (derecha) */
 .hero-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -375,7 +370,6 @@ section {
 }
 .location-photo-wrapper { flex: 0 0 42%; display: flex; justify-content: flex-end; }
 
-/* Borde rasgado a la derecha */
 .torn-edge-photo {
     width: 100%;
     max-width: 320px;
@@ -395,7 +389,6 @@ section {
     color: var(--texto);
 }
 
-/* Botón plateado, como en la referencia */
 .btn-silver {
     display: inline-block;
     padding: 10px 26px;
@@ -441,7 +434,6 @@ section {
     max-width: 560px;
     padding: 52px 22px 44px;
 }
-/* Recuadro suave detrás de la confirmación */
 .rsvp-container {
     background:
         radial-gradient(circle at 20% 30%, rgba(255,255,255,.6) 0 1.5px, transparent 2.5px),
@@ -470,9 +462,7 @@ section {
     *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 
-/* ---------- 12. AJUSTE DE TAMAÑOS PARA HERR VON MUELLERHOFF ----------
-   Esta tipografía es muy fina y de letra chica, por eso los tamaños son grandes.
-   Si cambiás la tipografía de --script, ajustá estos valores. */
+/* ---------- 12. AJUSTE DE TAMAÑOS ---------- */
 .welcome-name, .top-subtitle, .script-title, .bible-verse, .bible-ref { font-weight: 400; }
 .welcome-name { font-size: clamp(7.5rem, 32vw, 12rem); }
 .top-subtitle { font-size: clamp(4.6rem, 17vw, 7rem); }
@@ -482,8 +472,6 @@ section {
 .bible-ref { font-size: clamp(1.9rem, 6.2vw, 2.7rem); }
 
 /* ---------- 13. AJUSTES FINALES ---------- */
-
-/* Versículo en 5 renglones, centrado, con las polaroids a la derecha */
 .hero-row { grid-template-columns: 1.3fr 1fr; gap: 4px; }
 .bible-section { container-type: inline-size; padding: 0; }
 .bible-verse { font-size: clamp(1.7rem, 6vw, 2.6rem); line-height: 1.05; margin-bottom: 8px; }
@@ -495,7 +483,6 @@ section {
 .polaroid-stack .polaroid-card { width: clamp(118px, 31vw, 185px); }
 .polaroid-stack .polaroid-card:nth-child(2) { margin-top: -30px; margin-left: 14px; }
 
-/* "Lugar del evento:" un poco más chico y corrido a la izquierda */
 .location-content-box { min-width: 0; padding-right: 4px; }
 .location-content-box { container-type: inline-size; }
 .location-content-box .script-title.small {
@@ -507,13 +494,11 @@ section {
     .location-content-box .script-title.small { font-size: min(18cqw, 3.4rem); }
 }
 
-/* "¡El mejor regalo es tu presencia!" en un solo renglón */
 .info-block { width: 100%; max-width: 520px; container-type: inline-size; }
 .gift-title { font-size: clamp(2rem, 7vw, 3.4rem); white-space: nowrap; line-height: 1; margin-bottom: 18px; }
 @supports (width: 1cqw) { .gift-title { font-size: min(9.6cqw, 4.6rem); } }
 .info-text { max-width: 400px; margin-left: auto; margin-right: auto; }
 
-/* "Confirmación de asistencia" en un solo renglón */
 .rsvp-container .script-title {
     font-size: calc((min(100vw, 560px) - 72px) / 7.1);
     white-space: nowrap;
@@ -523,13 +508,11 @@ section {
 /* ---------- 14. AJUSTES PARA CELULAR ---------- */
 main#main-content { overflow-x: clip; }
 
-/* "It's my birthday" en un solo renglón */
 .top-subtitle {
     font-size: calc((min(100vw, 560px) - 40px) / 5.1);
     white-space: nowrap;
 }
 
-/* NICOLE (icono1.gif) más grande */
 .name-balloons-container {
     display: flex;
     justify-content: center;
@@ -544,7 +527,6 @@ main#main-content { overflow-x: clip; }
     flex-shrink: 0;
 }
 
-/* Versículo más grande: más ancho para el texto y polaroids un poco más chicas */
 .hero-row { grid-template-columns: 1.5fr 1fr; }
 .bible-verse { -webkit-text-stroke: .35px currentColor; }
 @supports (width: 1cqw) {
@@ -554,10 +536,8 @@ main#main-content { overflow-x: clip; }
 .polaroid-stack .polaroid-card { width: clamp(104px, 29vw, 185px); }
 .polaroid-stack .polaroid-card:nth-child(2) { margin-left: 12px; }
 
-/* Íconos más grandes */
 .icon-container { width: clamp(70px, 20vw, 100px); height: clamp(70px, 20vw, 100px); }
 
-/* Dress Code y "¡El mejor regalo...!" con el mismo tamaño */
 .info-section { padding-left: 8px; padding-right: 8px; }
 .info-block { max-width: 100%; }
 .info-block .script-title {
@@ -567,16 +547,13 @@ main#main-content { overflow-x: clip; }
     margin-bottom: 18px;
 }
 
-/* Foto del lugar más grande en pantallas chicas */
 @media (max-width: 520px) {
     .location-section { padding-left: 8px; padding-right: 8px; gap: 12px; }
     .location-photo-wrapper { flex: 0 0 50%; }
     .location-content-box .btn-silver.big { padding: 12px 18px; font-size: .92rem; }
 }
 
-/* ---------- 15. UBICACIÓN COMO LA REFERENCIA ----------
-   Foto pegada al borde izquierdo y con el alto del bloque
-   (de arriba del ícono hasta la base del botón). */
+/* ---------- 15. UBICACIÓN COMO LA REFERENCIA ---------- */
 .location-section { align-items: stretch; padding-left: 0; }
 .location-photo-wrapper {
     position: relative;
@@ -596,8 +573,6 @@ main#main-content { overflow-x: clip; }
 .location-content-box { justify-content: center; }
 
 /* ---------- 16. CAMBIOS DE LA CLIENTA ---------- */
-
-/* "Nicki Fest": letras plateadas tipo globo */
 .balloon-title {
     font-family: "Titan One", sans-serif;
     font-weight: 400;
@@ -616,7 +591,6 @@ main#main-content { overflow-x: clip; }
     filter: drop-shadow(0 3px 3px rgba(16, 36, 66, .35));
 }
 
-/* Mensaje de la cumpleañera (letra legible para un texto largo) */
 .message { max-width: 460px; margin: 6px auto 0; padding: 0 6px; }
 .message-text {
     font-family: var(--serif);
@@ -627,10 +601,8 @@ main#main-content { overflow-x: clip; }
     color: var(--texto);
 }
 
-/* Polaroids del inicio, lado a lado debajo del mensaje */
 .hero-polaroids { margin: 34px 0 0; }
 
-/* "Faltan" con letra más legible */
 .countdown-section .script-title {
     font-family: var(--serif);
     font-style: italic;
@@ -638,7 +610,6 @@ main#main-content { overflow-x: clip; }
     font-size: clamp(3rem, 12vw, 4.4rem);
 }
 
-/* Dirección del salón */
 .location-address {
     font-size: clamp(.72rem, 2.7vw, .9rem);
     letter-spacing: .5px;
@@ -647,7 +618,6 @@ main#main-content { overflow-x: clip; }
     margin: -10px 0 18px;
 }
 
-/* Colores prohibidos */
 .forbidden { margin-top: 28px; }
 .forbidden-title {
     font-size: clamp(.85rem, 3.2vw, 1rem);
@@ -670,7 +640,6 @@ main#main-content { overflow-x: clip; }
 .swatch-blue  { background: linear-gradient(135deg, #8fd0f5 0%, #1f5fb8 50%, #0b2a66 100%); }
 .swatch-gold  { background: linear-gradient(135deg, #f6e3a1 0%, #d4af37 55%, #a8801c 100%); }
 .swatch-white { background: #ffffff; border: 1.5px solid var(--plateado); }
-/* tachado diagonal = prohibido */
 .swatch::after {
     content: "";
     position: absolute;
@@ -683,17 +652,14 @@ main#main-content { overflow-x: clip; }
 }
 .forbidden-note { font-size: clamp(.75rem, 2.8vw, .9rem); letter-spacing: 1px; color: var(--texto-suave); }
 
-/* Encuadre de las fotos nuevas dentro de las polaroids */
 .polaroid-card img { object-position: center 20%; }
 
 /* ---------- 17. SEGUNDA RONDA DE CAMBIOS ---------- */
 :root { --script-title: "Sacramento", cursive; }
 
-/* Nicki Fest (icono1.png): ancho según la pantalla */
 .name-balloons-img { width: min(calc(100vw - 40px), 460px); max-width: none; }
 .music-player { margin-top: 6px; }
 
-/* Fecha: sin puntitos y con números más claros */
 .dot { display: none; }
 .date-frame h2 {
     font-family: var(--sans);
@@ -704,7 +670,6 @@ main#main-content { overflow-x: clip; }
     color: var(--azul-suave);
 }
 
-/* Todos los títulos con la misma letra (más legible) */
 .script-title {
     font-family: var(--script-title);
     font-style: normal;
@@ -713,7 +678,6 @@ main#main-content { overflow-x: clip; }
 }
 .countdown-section .script-title { font-family: var(--script-title); font-style: normal; font-size: clamp(3.4rem, 13vw, 5rem); }
 
-/* Títulos que se ajustan solos para entrar en un renglón (ver script.js) */
 .script-title.fit-title {
     width: max-content;
     max-width: none;
@@ -723,7 +687,6 @@ main#main-content { overflow-x: clip; }
     font-size: calc((min(100vw, 560px) - 16px) * 0.075);
 }
 
-/* Dress code: círculos sin nombres ni tachado, dorado brillante */
 .color-circles { margin: 18px 0 14px; }
 .swatch::after { content: none; }
 .swatch-gold {
@@ -733,7 +696,6 @@ main#main-content { overflow-x: clip; }
     box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, .4), inset -3px -4px 8px rgba(90, 55, 0, .35), 0 3px 8px rgba(16, 36, 66, .25);
 }
 
-/* ALIAS en su propio renglón, centrado */
 .alias-label {
     margin-top: 14px;
     font-size: clamp(.95rem, 3.6vw, 1.15rem);
@@ -744,16 +706,12 @@ main#main-content { overflow-x: clip; }
 .alias-label + .alias-text { margin-top: 8px; }
 
 /* ---------- 18. TERCERA RONDA DE CAMBIOS ---------- */
-
-/* Letra de la referencia (Allura) para todos los títulos en cursiva */
 :root { --script: "Allura", cursive; --script-title: "Allura", cursive; }
 .fit-line { width: max-content; max-width: none; margin-left: auto; margin-right: auto; white-space: nowrap; }
 .welcome-name { line-height: 1; }
 
-/* Sello del sobre (dorado, suave) */
 .envelope .seal { animation: latido 2.2s ease-in-out infinite; transform-origin: 160px 130px; }
 
-/* Fotos más grandes: una debajo de la otra, escalonadas y superpuestas, en formato vertical 3:4 */
 .polaroid-card img { aspect-ratio: 3 / 4; object-position: center 30%; }
 .polaroid-row {
     flex-direction: column;
@@ -766,7 +724,7 @@ main#main-content { overflow-x: clip; }
 .polaroid-row .polaroid-card:first-child { align-self: flex-start; margin-left: 3%; }
 .polaroid-row .polaroid-card:last-child  { align-self: flex-end; margin-right: 3%; margin-top: -36px; }
 
-/* ---------- 19. PRUEBA: FOTOS AL LADO DEL MENSAJE ---------- */
+/* ---------- 19. FOTOS AL LADO DEL MENSAJE ---------- */
 .hero-row.hero-side {
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 14px;
@@ -776,7 +734,7 @@ main#main-content { overflow-x: clip; }
 }
 .hero-side .message { margin: 0; padding: 0; max-width: none; }
 .hero-side .message-text {
-    font-size: clamp(1.2rem, 5.4vw, 1.7rem);   /* el JS lo ajusta para igualar el alto de las fotos */
+    font-size: clamp(1.2rem, 5.4vw, 1.7rem);
     line-height: 1.4;
     text-align: center;
     text-wrap: pretty;
@@ -794,16 +752,14 @@ main#main-content { overflow-x: clip; }
 }
 .date-frame { padding-left: clamp(14px, 5vw, 40px); padding-right: clamp(14px, 5vw, 40px); }
 
-/* ---------- 21. FOTO DEL SALÓN: sin borde rasgado agregado por código ----------
-   La foto ya trae su propio marco roto, se muestra completa y sin recortes. */
+/* ---------- 21. FOTO DEL SALÓN ---------- */
 .torn-edge-photo {
     clip-path: none;
     object-fit: contain;
     object-position: left center;
 }
 
-/* ---------- 22. "MIS QUINCE AÑOS" con la letra de la referencia ----------
-   Serif clásica en mayúsculas y bien espaciada (Cinzel). */
+/* ---------- 22. "MIS QUINCE AÑOS" ---------- */
 .welcome-sub {
     font-family: "Cinzel", "Times New Roman", serif;
     font-size: clamp(1.05rem, 4.8vw, 1.4rem);
@@ -812,17 +768,13 @@ main#main-content { overflow-x: clip; }
     text-transform: uppercase;
 }
 
-/* ---------- 23. UBICACIÓN: foto más alta, como la referencia ----------
-   En la referencia la foto mide más de la mitad del ancho de la tarjeta de alto
-   y el bloque de texto queda centrado respecto a ella. */
+/* ---------- 23. UBICACIÓN: foto más alta ---------- */
 .location-photo-wrapper { min-height: calc(min(100vw, 560px) * 0.57); }
 .location-content-box { justify-content: center; }
 .location-content-box .icon-container { margin-bottom: 14px; }
 .location-name { margin-bottom: 24px; }
 
-/* ---------- 24. UBICACIÓN: misma separación a ambos lados ----------
-   La foto deja el mismo espacio a la izquierda que el texto a la derecha.
-   Para cambiarlo, tocá --loc-pad (más grande = más margen). */
+/* ---------- 24. UBICACIÓN: misma separación a ambos lados ---------- */
 .location-section {
     --loc-pad: clamp(14px, 4.5vw, 24px);
     padding-left: var(--loc-pad);
@@ -831,9 +783,7 @@ main#main-content { overflow-x: clip; }
 .location-content-box { padding-right: 0; }
 .location-photo-wrapper { flex: 0 0 48%; }
 
-/* ---------- 25. UBICACIÓN: foto grande pegada al costado, texto centrado ----------
-   La foto ocupa más de la mitad del ancho, pegada al borde izquierdo, con su alto
-   natural (sin recortes). El texto queda centrado en el espacio que sobra. */
+/* ---------- 25. UBICACIÓN: foto grande pegada al costado ---------- */
 .location-section {
     align-items: center;
     gap: 12px;
@@ -857,24 +807,46 @@ main#main-content { overflow-x: clip; }
 }
 .location-content-box { padding: 0; justify-content: center; }
 
-/* ---------- 26. AZUL #061944 ---------- */
+/* ---------- 26. CAMBIOS: NOMBRE NEÓN, AZUL #061944, MARCOS POLAROID ---------- */
 :root {
     --azul-marino: #061944;
     --azul-marino-hover: #040f2b;
 }
 
+/* "Nicole" en la pantalla de bienvenida: script fino con efecto neón */
+.welcome-name {
+    font-family: "Mrs Saint Delafield", cursive;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow:
+        0 0 4px #ffffff,
+        0 0 10px #ffffff,
+        0 0 20px rgba(255, 255, 255, .9),
+        0 0 40px rgba(143, 208, 245, .9),
+        0 0 70px rgba(63, 143, 220, .8);
+}
+
+/* Botones (Ubicación y Confirmar): azul plano, sin bordes */
 .btn-silver {
+    background: var(--azul-marino);
+    color: #ffffff;
+    border: none;
+    text-shadow: none;
     box-shadow: 0 4px 10px rgba(6, 25, 68, .3);
 }
 .btn-silver:hover {
+    background: var(--azul-marino-hover);
     box-shadow: 0 8px 16px rgba(6, 25, 68, .4);
 }
 
+/* Marcos de las fotos: azul plano, borde de abajo grueso tipo polaroid */
 .polaroid-card {
+    background: var(--azul-marino);
+    border: none;
+    padding: 10px 10px 48px;
     box-shadow: 0 10px 24px rgba(6, 25, 68, .3);
 }
 
-/* ---------- 27. MARCO TIPO POLAROID: borde de abajo grueso ---------- */
-.polaroid-card {
-    padding: 10px 10px 48px;
-}
+/* Círculos de colores prohibidos: planos, sin degradado */
+.swatch-blue { background: #1b4a9e; }
+.swatch-gold { background: #d4af37; box-shadow: 0 3px 8px rgba(6, 25, 68, .25); }
