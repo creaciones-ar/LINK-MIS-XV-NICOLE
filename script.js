@@ -11,6 +11,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const progress = document.getElementById("progress");
     const progressBar = document.getElementById("progress-bar");
 
+    // =====================================================
+    //  TAMAÑO DE LA LETRA DEL MENSAJE ("Hoy dejo atrás...")
+    //  Cambiá solo este número:
+    //    1   = el texto ocupa el mismo alto que las fotos (letra chica)
+    //    1.5 = letra más grande (valor actual)
+    //    1.8 = todavía más grande
+    //    2   = bien grande
+    // =====================================================
+    const MESSAGE_SCALE = 1.5;
+
     // Diagnóstico: abrí la página con ?debug=1 al final del link para ver el error de audio
     function debugMsg(text) {
         if (!/[?&]debug/.test(location.search)) return;
@@ -63,15 +73,15 @@ document.addEventListener("DOMContentLoaded", function () {
             if (best !== Infinity) list.forEach(function (el) { el.style.fontSize = best + "px"; });
         });
     }
-    // ---------- MENSAJE: que ocupe el mismo alto que las fotos ----------
+    // ---------- MENSAJE: tamaño de letra según el alto de las fotos ----------
     function fitMessage() {
         document.querySelectorAll(".hero-side").forEach(function (row) {
             const text = row.querySelector(".message-text");
             const stack = row.querySelector(".polaroid-stack");
             if (!text || !stack) return;
-            const target = stack.offsetHeight * 0.96;
+            const target = stack.offsetHeight * MESSAGE_SCALE;
             if (target <= 0) return;                          // sección oculta todavía
-            let lo = 14, hi = 42;
+            let lo = 14, hi = 48;
             for (let i = 0; i < 14; i++) {
                 const mid = (lo + hi) / 2;
                 text.style.fontSize = mid + "px";
