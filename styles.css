@@ -1,13 +1,13 @@
 /* =========================================
    INVITACIÓN XV DE NICOLE
    Estructura y tipografía de la referencia,
-   paleta azul marino #061944
+   paleta azul #1b365d (mismo azul de "It's my birthday")
    ========================================= */
 
 
 /* ---------- 1. VARIABLES: cambiá la paleta desde acá ---------- */
 :root {
-    --azul: #0b2d4d;
+    --azul: #1b365d;
     --azul-oscuro: #14506A;
     --azul-suave: #526987;
     --plateado: #aeb9c8;
@@ -234,7 +234,7 @@ section {
     border-radius: 50%;
     background: var(--azul);
     color: #fff;
-    box-shadow: 0 6px 14px rgba(16,36,66,.3);
+    box-shadow: 0 6px 14px rgba(27,54,93,.3);
 }
 .ctrl.play-main svg { width: 26px; height: 26px; }
 .icon-pause { display: none; }
@@ -807,10 +807,11 @@ main#main-content { overflow-x: clip; }
 }
 .location-content-box { padding: 0; justify-content: center; }
 
-/* ---------- 26. CAMBIOS: NOMBRE NEÓN, AZUL DEL FONDO, MARCOS POLAROID ---------- */
+/* ---------- 26. CAMBIOS: NOMBRE NEÓN, AZUL DE "IT'S MY BIRTHDAY", MARCOS POLAROID ---------- */
 :root {
-    --azul-marino: #0e449a;        /* azul del fondo */
-    --azul-marino-hover: #0b3a85;  /* un poco más oscuro al pasar el mouse */
+    /* Mismo azul que el texto "It's my birthday" (#1b365d) */
+    --azul-marino: #1b365d;
+    --azul-marino-hover: #142a49;   /* un poco más oscuro al pasar el mouse */
 }
 
 /* "Nicole" en la pantalla de bienvenida: script fino con efecto neón */
@@ -832,20 +833,21 @@ main#main-content { overflow-x: clip; }
     color: #ffffff;
     border: none;
     text-shadow: none;
-    box-shadow: 0 4px 10px rgba(14, 68, 154, .35);
+    box-shadow: 0 4px 10px rgba(27, 54, 93, .3);
 }
 .btn-silver:hover {
     background: var(--azul-marino-hover);
-    box-shadow: 0 8px 16px rgba(14, 68, 154, .45);
+    box-shadow: 0 8px 16px rgba(27, 54, 93, .4);
 }
 
+/* Marcos de las fotos: azul plano, borde de abajo grueso tipo polaroid */
 .polaroid-card {
     background: var(--azul-marino);
     border: none;
     padding: 10px 10px 48px;
-    box-shadow: 0 10px 24px rgba(14, 68, 154, .35);
+    box-shadow: 0 10px 24px rgba(27, 54, 93, .3);
 }
 
 /* Círculos de colores prohibidos: planos, sin degradado */
 .swatch-blue { background: #1b4a9e; }
-.swatch-gold { background: #d4af37; box-shadow: 0 3px 8px rgba(6, 25, 68, .25); }
+.swatch-gold { background: #d4af37; box-shadow: 0 3px 8px rgba(27, 54, 93, .25); }
