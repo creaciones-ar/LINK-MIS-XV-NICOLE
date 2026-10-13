@@ -809,8 +809,8 @@ main#main-content { overflow-x: clip; }
 
 /* ---------- 26. CAMBIOS: NOMBRE NEÓN, AZUL #061944, MARCOS POLAROID ---------- */
 :root {
-    --azul-marino: #061944;
-    --azul-marino-hover: #040f2b;
+    --azul-marino: #0B2D4D;
+    --azul-marino-hover: #0B2D4D;
 }
 
 /* "Nicole" en la pantalla de bienvenida: script fino con efecto neón */
