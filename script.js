@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //    1.8 = todavía más grande
     //    2   = bien grande
     // =====================================================
-    const MESSAGE_SCALE = 1.2;
+    const MESSAGE_SCALE = 1.1;
 
     // Diagnóstico: abrí la página con ?debug=1 al final del link para ver el error de audio
     function debugMsg(text) {
