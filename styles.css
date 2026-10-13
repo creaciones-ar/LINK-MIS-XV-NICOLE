@@ -807,10 +807,10 @@ main#main-content { overflow-x: clip; }
 }
 .location-content-box { padding: 0; justify-content: center; }
 
-/* ---------- 26. CAMBIOS: NOMBRE NEÓN, AZUL #061944, MARCOS POLAROID ---------- */
+/* ---------- 26. CAMBIOS: NOMBRE NEÓN, AZUL DEL FONDO, MARCOS POLAROID ---------- */
 :root {
-    --azul-marino: #0B2D4D;
-    --azul-marino-hover: #0B2D4D;
+    --azul-marino: #0e449a;        /* azul del fondo */
+    --azul-marino-hover: #0b3a85;  /* un poco más oscuro al pasar el mouse */
 }
 
 /* "Nicole" en la pantalla de bienvenida: script fino con efecto neón */
@@ -832,19 +832,18 @@ main#main-content { overflow-x: clip; }
     color: #ffffff;
     border: none;
     text-shadow: none;
-    box-shadow: 0 4px 10px rgba(6, 25, 68, .3);
+    box-shadow: 0 4px 10px rgba(14, 68, 154, .35);
 }
 .btn-silver:hover {
     background: var(--azul-marino-hover);
-    box-shadow: 0 8px 16px rgba(6, 25, 68, .4);
+    box-shadow: 0 8px 16px rgba(14, 68, 154, .45);
 }
 
-/* Marcos de las fotos: azul plano, borde de abajo grueso tipo polaroid */
 .polaroid-card {
     background: var(--azul-marino);
     border: none;
     padding: 10px 10px 48px;
-    box-shadow: 0 10px 24px rgba(6, 25, 68, .3);
+    box-shadow: 0 10px 24px rgba(14, 68, 154, .35);
 }
 
 /* Círculos de colores prohibidos: planos, sin degradado */
