@@ -857,31 +857,19 @@ main#main-content { overflow-x: clip; }
 }
 .location-content-box { padding: 0; justify-content: center; }
 
-/* ---------- 26. AZUL MARINO PLANO, SIN BORDES ---------- */
+/* ---------- 26. AZUL #061944 ---------- */
 :root {
-    --azul-marino: #1a2a5e;
-    --azul-marino-hover: #12204a;
+    --azul-marino: #061944;
+    --azul-marino-hover: #040f2b;
 }
 
-/* Botones (Ubicación y Confirmar) */
 .btn-silver {
-    background: var(--azul-marino);
-    color: #ffffff;
-    border: none;
-    text-shadow: none;
-    box-shadow: 0 4px 10px rgba(26, 42, 94, .3);
+    box-shadow: 0 4px 10px rgba(6, 25, 68, .3);
 }
 .btn-silver:hover {
-    background: var(--azul-marino-hover);
-    box-shadow: 0 8px 16px rgba(26, 42, 94, .4);
+    box-shadow: 0 8px 16px rgba(6, 25, 68, .4);
 }
 
-/* Marcos de las fotos (polaroids) */
 .polaroid-card {
-    background: var(--azul-marino);
-    border: none;
-    box-shadow: 0 10px 24px rgba(26, 42, 94, .3);
-}
-.polaroid-card img {
-    outline: none;
+    box-shadow: 0 10px 24px rgba(6, 25, 68, .3);
 }
